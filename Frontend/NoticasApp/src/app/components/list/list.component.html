@@ -1,0 +1,18 @@
+<div class = "vertical-list-container">
+    <section>
+        <div class="search">
+            <input type="text" class = "search-input" placeholder="Search notes...">
+            <button class="searh-button" > 🔍 </button>
+        </div>
+
+        <div > 
+            <button class="create-note" (click)="onButtonClick()"> Create note </button>
+        </div>
+
+    </section>
+
+
+    <ul class="vertical-list">
+        <li  *ngFor="let note of noteList"><a class="item-menu" [routerLink]="'/notes/note/' + note.id">{{ note.title }}</a></li>
+    </ul>
+</div>

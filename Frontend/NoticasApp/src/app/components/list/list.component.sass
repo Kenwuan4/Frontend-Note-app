@@ -1,0 +1,30 @@
+.vertical-list-container
+  flex-direcction: column
+  width: 300px  // Ajusta el tamaño según sea necesario
+  height: 98vh  // Ajusta el tamaño según sea necesario
+  border: 1px solid #ccc  // Borde para visualizar mejor el contenedor
+  padding: 10px  // Espaciado interno para el contenedor
+  box-sizing: border-box  // Asegura que el padding no afecte el tamaño total del contenedo
+  transition: overflow-y 0.3s
+
+    // Muestra la barra de desplazamiento al hacer hover sobre el div
+  &:hover::-webkit-scrollbar 
+    width: 10px  // Ancho de la barra de desplazamiento
+    background-color: rgba(0, 0, 0, 0.1) // Color de fondo de la barra de desplazamiento
+  
+
+  &:not:hover::-webkit-scrollbar 
+    width: 0
+    background-color: transparent
+  
+
+
+.vertical-list
+  list-style-type: none
+  padding: 0
+  margin: 0
+  text-align: left
+
+  li
+    padding: 10px 15px
+    border-bottom: 1px solid #ccc

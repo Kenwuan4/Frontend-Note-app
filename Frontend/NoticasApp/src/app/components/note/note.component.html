@@ -1,0 +1,7 @@
+
+<div class="note-container">
+    <input type="text" class = "title-input" [(ngModel)]="note.title" (ngModelChange)="inputCambiado()">
+    <input type="text" class = "body-input"  [(ngModel)]="note.body" (ngModelChange)="inputCambiado()">
+
+    <button *ngIf="changes" (click)="onButtonClick()"> Guardar Nota</button>
+</div>
